@@ -49,16 +49,19 @@ body {
 	padding-top: 10px;
 }
 
-.nav nav a {
-	text-decoration: none;
+.nav nav button {
 	color: rgb(158, 158, 158);
 	display: block;
+	width: 100%;
+	background: transparent;
+	border: none;
+	text-align: left;
 	padding: 12px 15px;
 	transition: all .3s;
 	position: relative;
 }
 
-.nav nav a::after {
+.nav nav button::after {
 	content: '';
 	position: absolute;
 	top: 50%;
@@ -69,11 +72,11 @@ body {
 	display: none;
 	transition: all .3s;
 }
-.nav nav a:hover::after {
+.nav nav button:hover::after {
 	display: inline-block;
 }
 
-.nav nav a:hover {
+.nav nav button:hover {
 	background: rgba(255, 255, 255, 0.411);
 	color: white;
 }
@@ -84,3 +87,140 @@ body {
 	background: linear-gradient(white, #ebebeb);
 }
 
+.title {
+	padding: 17px 0;
+	font-size: 2.5em;
+	text-align: center;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	letter-spacing: 2px;
+	font-weight: 600;
+	position: relative;
+}
+
+.title::after {
+	content: '';
+	height: 3px;
+	width: 5%;
+	position: absolute;
+	bottom: 12px;
+	left: 50%;
+	transform: translateX(-50%);
+	background: #700296;
+	display: block;
+}
+
+.skills {
+	background: rgb(252, 248, 221);
+	height: 507px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.skill {
+	background: white;
+	box-shadow: 0 0 5px gray;
+	border-radius: 10px;
+	margin: 5px;
+	/* margin: 10px auto; */
+	width: 70%;
+	padding: 20px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	transition: transform .3s;
+}
+
+.skill:hover {
+	transform: scale(1.1);
+}
+
+.language {
+	display: block;
+	padding-bottom: 10px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	letter-spacing: 1px;
+}
+
+.progress {
+	height: 15px;
+	display: block;
+	box-shadow: inset 0 0 3px rgb(68, 68, 68);
+	border-radius: 15px;
+}
+
+.html, .css, .javascript, .react, .git {
+	background: linear-gradient(#fac400, #c29800);
+	height: 100%;
+	display: block;
+	border-radius: 15px;
+}
+
+.html {
+	animation: html 2s;
+	width: 70%;
+}
+
+.css {
+	animation: css 2s;
+	width: 80%;
+}
+
+.javascript {
+	animation: javascript 2s;
+	width: 65%;
+}
+
+.react {
+	animation: react 2s;
+	width: 60%;
+}
+
+.git {
+	animation: git 2s;
+	width: 50%;
+}
+
+@keyframes html {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 70%;
+	}
+}
+
+@keyframes css {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 80%;
+	}
+}
+
+@keyframes javascript {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 65%;
+	}
+}
+
+@keyframes react {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 60%;
+	}
+}
+
+@keyframes git {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 50%;
+	}
+}
