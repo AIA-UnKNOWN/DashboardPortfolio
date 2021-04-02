@@ -41,9 +41,19 @@
 			</span>
 		</div>
 	</div>`;
+	const innerHTMLforProjects = `for Projects`;
+	const innerHTMMLforContact = `for Contact`;
 
 	document.querySelector('button[id="skills"]').addEventListener("click", function() {
 		root.innerHTML = innerHTMLforSkills;
+	});
+
+	document.querySelector('button[id="projects"]').addEventListener("click", function() {
+		root.innerHTML = innerHTMLforProjects;
+	});
+
+	document.querySelector('button[id="contact"]').addEventListener("click", function() {
+		root.innerHTML = innerHTMMLforContact;
 	});
 
 })();

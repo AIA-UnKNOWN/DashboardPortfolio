@@ -56,6 +56,7 @@ body {
 	background: transparent;
 	border: none;
 	text-align: left;
+	font-size: 1.1em;
 	padding: 12px 15px;
 	transition: all .3s;
 	position: relative;
@@ -72,13 +73,18 @@ body {
 	display: none;
 	transition: all .3s;
 }
-.nav nav button:hover::after {
+
+.nav nav button:focus::after {
 	display: inline-block;
 }
 
 .nav nav button:hover {
 	background: rgba(255, 255, 255, 0.411);
 	color: white;
+}
+
+.nav nav button:focus {
+	outline: none;
 }
 
 .content {
@@ -110,7 +116,7 @@ body {
 }
 
 .skills {
-	background: rgb(252, 248, 221);
+	background: #eec9fa;
 	height: 507px;
 	display: flex;
 	justify-content: center;
@@ -149,7 +155,7 @@ body {
 }
 
 .html, .css, .javascript, .react, .git {
-	background: linear-gradient(#fac400, #c29800);
+	background: linear-gradient(#700296, #43015c);
 	height: 100%;
 	display: block;
 	border-radius: 15px;
