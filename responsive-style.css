@@ -84,4 +84,10 @@
 		width: 100%;
 	}
 
+	.name-input input,
+	.email-input input,
+	#message-area {
+		font-size: 14px;
+	}
+
 }
