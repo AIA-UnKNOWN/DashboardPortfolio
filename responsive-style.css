@@ -87,4 +87,13 @@
 		font-size: 14px;
 	}
 
+	#message-area {
+		height: 150px;
+	}
+
+	input[value="Send"] {
+		padding: 10px;
+		margin-top: 20px;
+	}
+
 }
