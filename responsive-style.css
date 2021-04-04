@@ -1,0 +1,87 @@
+@media (max-width: 500px) {
+
+	body {
+		display: block;
+	}
+
+	.app {
+		width: 100%;
+		height: auto;
+		flex-direction: column;
+	}
+
+	.nav, .content {
+		width: 100%;
+	}
+
+	.nav {
+		padding: 0;
+	}
+
+	#toggleNavbar {
+		display: none;
+	}
+
+	#toggleNavbar:checked ~ nav {
+		display: block;
+	}
+
+	.nav img {
+		margin: 15px auto 15px;
+	}
+
+	.nav nav {
+		padding-top: 0;
+		display: none;
+	}
+
+	.nav nav button {
+		text-align: center;
+	}
+
+	.nav nav button:focus::after {
+		display: none;
+	}
+
+	.title::after {
+		width: 10%;
+	}
+
+	.skill {
+		width: 85%;
+	}
+
+	.contact-container {
+		justify-content: center;
+		flex-direction: column;
+		width: 300px;
+		height: fit-content;
+		justify-content: center;
+		padding: 30px 10px;
+		animation-name: formAnimationForMobile;
+		-o-animation-name: formAnimationForMobile;
+		-moz-animation-name: formAnimationForMobile;
+		-webkit-animation-name: formAnimationForMobile;
+	}
+
+	.contact-container img {
+		display: none;
+	}
+
+	@keyframes formAnimationForMobile {
+		0% {
+			transform: scale(1);
+		}
+		50% {
+			transform: scale(1.1);
+		}
+		100% {
+			transform: scale(1);
+		}
+	}
+
+	.contact-container form {
+		width: 100%;
+	}
+
+}
