@@ -41,7 +41,74 @@
 			</span>
 		</div>
 	</div>`;
-	const innerHTMLforProjects = `for Projects`;
+	const innerHTMLforProjects = `
+	<p class="title">Projects</p>
+	<div class="projects-wrapper">
+		<div class="projects">
+			
+			<div class="project">
+				<div class="thumbnail">
+					<img src="https://www.probytes.net/wp-content/uploads/2018/02/25-Stunning-website-designs-of-2018-that-will-blow-you-away-1.jpg" alt="">
+				</div>
+				<div class="info">
+					<p class="title">Project Title</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima atque repellat saepe at. Aliquam obcaecati nulla dignissimos nesciunt cum distinctio.</p>
+					<a href="">Go to Link</a>
+				</div>
+			</div>
+			<div class="project">
+				<div class="thumbnail">
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKyv9wYEw5S83pzpC2oN_opKsZXRalZmUZdA&usqp=CAU" alt="">
+				</div>
+				<div class="info">
+					<p class="title">Project Title</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima atque repellat saepe at. Aliquam obcaecati nulla dignissimos nesciunt cum distinctio.</p>
+					<a href="">Go to Link</a>
+				</div>
+			</div>
+			<div class="project">
+				<div class="thumbnail">
+					<img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTOe13gSGcDYolLUNkgsjU-HQ9ia9l80unoA&usqp=CAU" alt="">
+				</div>
+				<div class="info">
+					<p class="title">Project Title</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima atque repellat saepe at. Aliquam obcaecati nulla dignissimos nesciunt cum distinctio.</p>
+					<a href="">Go to Link</a>
+				</div>
+			</div>
+			<div class="project">
+				<div class="thumbnail">
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZibkR-07bWlTIGpSWBFBHgFlMfPYQjTnROQ&usqp=CAU" alt="">
+				</div>
+				<div class="info">
+					<p class="title">Project Title</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima atque repellat saepe at. Aliquam obcaecati nulla dignissimos nesciunt cum distinctio.</p>
+					<a href="">Go to Link</a>
+				</div>
+			</div>
+			<div class="project">
+				<div class="thumbnail">
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf-szsKCskAAz5mDL6nwvR6g0oqfJW8ANSyQ&usqp=CAU" alt="">
+				</div>
+				<div class="info">
+					<p class="title">Project Title</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima atque repellat saepe at. Aliquam obcaecati nulla dignissimos nesciunt cum distinctio.</p>
+					<a href="">Go to Link</a>
+				</div>
+			</div>
+			<div class="project">
+				<div class="thumbnail">
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBac-YOdXG8M1mM91SqOdYSQLXBcdIqe3Now&usqp=CAU" alt="">
+				</div>
+				<div class="info">
+					<p class="title">Project Title</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima atque repellat saepe at. Aliquam obcaecati nulla dignissimos nesciunt cum distinctio.</p>
+					<a href="">Go to Link</a>
+				</div>
+			</div>
+
+		</div>
+	</div>`;
 	const innerHTMMLforContact = `
 	<p class="title">Contact</p>
 	<div class="contact">
