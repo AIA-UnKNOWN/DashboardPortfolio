@@ -52,6 +52,10 @@
 					}, function(error) {
 							console.log('Failed to sent!', error);
 					});
+				// Clears the user inputs
+				document.querySelector('input#user-name').value = '';
+				document.querySelector('input#user-email').value = '';
+				document.querySelector('textarea#message-area').value = '';
 		});
 	}
 
