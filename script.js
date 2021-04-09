@@ -43,19 +43,28 @@
 
 	const contactForm = document.querySelector('.contact form');
 
+	const userName = document.querySelector('input#user-name');
+	const userEmail = document.querySelector('input#user-email');
+	const messageArea = document.querySelector('textarea#message-area');
+
 	window.onload = function() {
 		contactForm.addEventListener('submit', function(event) {
+				if (!userName.value || !userEmail.value || !messageArea.value) {
+					alert('Please fill all the inputs!');
+				} else {
+					emailjs.sendForm('contact_service', 'contact_form', this)
+						.then(function() {
+								console.log('Sent!');
+						}, function(error) {
+								console.log('Failed to sent!', error);
+						});
+					// Clears the user inputs
+					userName.value = '';
+					userEmail.value = '';
+					messageArea.value = '';
+				}
+				// This is to avoid to refresh the page
 				event.preventDefault();
-				emailjs.sendForm('contact_service', 'contact_form', this)
-					.then(function() {
-							console.log('Sent!');
-					}, function(error) {
-							console.log('Failed to sent!', error);
-					});
-				// Clears the user inputs
-				document.querySelector('input#user-name').value = '';
-				document.querySelector('input#user-email').value = '';
-				document.querySelector('textarea#message-area').value = '';
 		});
 	}
 
