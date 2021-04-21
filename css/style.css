@@ -249,6 +249,15 @@ body {
 	background: #fffacc;
 }
 
+.projects-wrapper::-webkit-scrollbar {
+	width: 5px;
+}
+
+.projects-wrapper::-webkit-scrollbar-thumb {
+	background: #700296;
+	border-radius: 5px;
+}
+
 .projects {
 	padding: 10px;
 	display: flex;
@@ -308,6 +317,20 @@ body {
 .project .info p {
 	text-align: center;
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.project .info p + p {
+	height: 100px;
+	overflow-y: auto;
+}
+
+.project .info p + p::-webkit-scrollbar {
+	width: 5px;
+}
+
+.project .info p + p::-webkit-scrollbar-thumb {
+	background: #700296;
+	border-radius: 5px;
 }
 
 .project .info a {
